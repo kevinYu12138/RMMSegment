@@ -1,5 +1,5 @@
-correct_segment = open("../data/text/correct.txt", 'r', encoding="utf-8")
-rmm_segment = open("../data/text/rmm_segment.txt", 'r', encoding="utf-8")
+correct_segment = open("data/text/correct.txt", 'r', encoding="utf-8")
+rmm_segment = open("data/text/rmm_segment.txt", 'r', encoding="utf-8")
 correct = []
 my_segment = []
 print("\nStart loading correct text ...")

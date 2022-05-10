@@ -67,7 +67,7 @@ def RMMSegment(input_file, output_file, dict_path):
     f1.close()
     f2.close()
 
-path = "../data/dictionary/dict.txt"
-RMMSegment("../data/text/背影.txt", "../data/text/rmm_segment.txt", "../data/dictionary/dict.txt")
+path = "data/dictionary/dict.txt"
+RMMSegment("data/text/背影.txt", "data/text/rmm_segment.txt", "data/dictionary/dict.txt")
 
 
