@@ -55,12 +55,14 @@ def cal_fscore(my_segfile, standard_segfile):
 
 
 def main():
-    print("用词典正向最大匹配法，包含标点符号：")
-    cal_fscore("resource/segment_dict_fmm.txt", "resource/segment_noslash.txt")
-    print("用词典正向最大匹配法，去除标点符号后：")
-    cal_fscore("resource/segment_dict_fmm_nopunc.txt", "resource/segment_noslash_nopunc.txt")
+    # print("用词典正向最大匹配法，包含标点符号：")
+    # cal_fscore("resource/segment_dict_fmm.txt", "resource/segment_noslash.txt")
+    # print("用词典正向最大匹配法，去除标点符号后：")
+    # cal_fscore("resource/segment_dict_fmm_nopunc.txt", "resource/segment_noslash_nopunc.txt")
     print("用词典逆向最大匹配法，包含标点符号：")
     cal_fscore("resource/segment_dict_rmm.txt", "resource/segment_noslash.txt")
+
+
     print("用词典逆向最大匹配法，去除标点符号后：")
     cal_fscore("resource/segment_dict_rmm_nopunc.txt", "resource/segment_noslash_nopunc.txt")
 
