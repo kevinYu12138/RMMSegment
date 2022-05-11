@@ -20,7 +20,7 @@ print(seg_correct, "correct words in rmm_segmentation.\n")
 
 precision = seg_correct / len(my_segment)
 recall = seg_correct / len(correct)
-F1 = (2*precision) / (precision + recall)
+F1 = (2*precision*recall) / (precision + recall)
 
 print("Precision is", precision)
 print("Recall is", recall)
