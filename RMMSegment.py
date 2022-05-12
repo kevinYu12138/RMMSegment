@@ -34,13 +34,14 @@ def RMMSegment(input_file, output_file, dict_path):
             if word in dictionary:
                 output.append(word)
                 input = input[:len(input)-len(word)]
+                begin -= len(word)
                 break  # 匹配成功，则保留长度大的词，停止匹配
             else:
                 word = word[1:]  # 若词典中没有当前所截的词，则每次向后缩小匹配的长度，直至word只剩1个字符
                 if len(word) == 1:
                     output.append(word)
                     input = input[:len(input) - len(word)]
-        begin -= 1  # 当前最大分词长度的词
+                    begin -= 1
 
     # 当begin = 0时，不可再向前收缩，须由后向前截断匹配词
     if begin == 0:
